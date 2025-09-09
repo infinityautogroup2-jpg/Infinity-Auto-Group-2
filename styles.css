@@ -68,4 +68,10 @@ form .btn{margin-top:10px}
 .lang-switch{margin-left:.6rem;opacity:.85}
 .btn-secondary{background:#ffffff;color:#0b0f16;border:1px solid #2a364b}
 .btn-secondary:hover{filter:brightness(1.03)}
+.price{
+  margin:.25rem 0 .6rem;
+  font-weight:800;
+  font-size:1.05rem;
+  color:#7cf29c;          /* subtle green to stand out */
+}
 
