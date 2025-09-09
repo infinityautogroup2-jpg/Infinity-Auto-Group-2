@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mechanical Help | Infinity Auto Group</title>
+  <meta name="description" content="Prius rentals with unlimited California miles, mobile mechanical help, body & paint, and sales.">
+  <meta property="og:image" content="assets/og.jpg">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html"><img class="logo-img" src="assets/logo.png" alt="Infinity Auto Group logo"><span class="logo-text">Infinity Auto Group</span></a>
+    <nav class="nav" id="nav">
+      <a href="booking.html" class="btn">Book Now</a>
+      <a href="rentals.html">Rentals</a>
+      <a href="auto-repair.html">Mechanical Help</a>
+      <a href="auto-body.html">Auto Body</a>
+      <a href="sales.html">Sales</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="btn btn-outline">Contact</a>
+      <span class="lang-switch"><a href="index.html">EN</a> | <a href="es/index.html">ES</a> | <a href="pt/index.html">PT</a></span>
+    </nav>
+    <button class="hamburger" aria-label="Toggle menu" onclick="toggleMenu()">☰</button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Mechanical Help — We Come to You</h1>
+    <p>Mobile service across Culver City, CA and nearby. Upfront pricing, below-market rates, and reliable work.</p>
+  </div>
+</section>
+<section class="container grid-2">
+  <div>
+    <h3>Mobile Services</h3>
+    <ul class="bullets">
+      <li>We go to your location (home or work)</li>
+      <li>Oil changes, filters, fluids</li>
+      <li>Battery tests & hybrid system checks</li>
+      <li>Transparent estimates before any work</li>
+    </ul>
+    <h3>Shop Services</h3>
+    <ul class="bullets">
+      <li>Brakes: pads/rotors, ABS checks</li>
+      <li>Cooling system & belts</li>
+      <li>Pre-purchase inspections</li>
+    </ul>
+    <h3>Why Infinity</h3>
+    <ul class="bullets">
+      <li>Below-market pricing</li>
+      <li>Honest recommendations, no upsell</li>
+      <li>Toyota hybrid experience</li>
+      <li>Fast turnaround on common jobs</li>
+    </ul>
+  </div>
+  <aside class="panel">
+    <h3>Book a service</h3>
+    <form action="https://formspree.io/f/xbldknny" method="POST">
+      <label>Name <input name="name" required></label>
+      <label>Email <input name="email" type="email" required></label>
+      <label>Phone <input name="phone" type="tel"></label>
+      <label>Message <textarea name="message" rows="4" placeholder="Tell us what you need help with..."></textarea></label>
+      <button class="btn" type="submit">Request appointment</button>
+    </form>
+    <p class="muted">We’ll confirm availability and pricing before any work.</p>
+  </aside>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>Infinity Auto Group</h4>
+      <p>Culver City, CA</p>
+      <p><a href="tel:+13109089566">(310) 908-9566</a><br><a href="mailto:infinityautogroup2@gmail.com">infinityautogroup2@gmail.com</a></p>
+      <div class="cta-row">
+        <a class="btn btn-whatsapp" href="https://wa.me/13109089566" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+    <div>
+      <h4>Hours</h4>
+      <p>Mon–Sun: 7:00 AM – 11:00 PM</p>
+    </div>
+  </div>
+  <div class="container footer-bottom"><small>© 2025 Infinity Auto Group</small></div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

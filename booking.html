@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book Now | Infinity Auto Group</title>
+  <meta name="description" content="Prius rentals with unlimited California miles, mobile mechanical help, body & paint, and sales.">
+  <meta property="og:image" content="assets/og.jpg">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html"><img class="logo-img" src="assets/logo.png" alt="Infinity Auto Group logo"><span class="logo-text">Infinity Auto Group</span></a>
+    <nav class="nav" id="nav">
+      <a href="booking.html" class="btn">Book Now</a>
+      <a href="rentals.html">Rentals</a>
+      <a href="auto-repair.html">Mechanical Help</a>
+      <a href="auto-body.html">Auto Body</a>
+      <a href="sales.html">Sales</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="btn btn-outline">Contact</a>
+      <span class="lang-switch"><a href="index.html">EN</a> | <a href="es/index.html">ES</a> | <a href="pt/index.html">PT</a></span>
+    </nav>
+    <button class="hamburger" aria-label="Toggle menu" onclick="toggleMenu()">☰</button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Book a Rental</h1>
+    <p>Answer a few questions so we can confirm you qualify and get you on the road fast.</p>
+  </div>
+</section>
+<section class="container grid-2">
+  <div class="panel">
+    <h3>Your Details</h3>
+    <form id="booking" action="https://formspree.io/f/xbldknny" method="POST">
+      <label>Full name <input name="name" required></label>
+      <label>Email <input type="email" name="email" required></label>
+      <label>Phone <input type="tel" name="phone" required></label>
+      <label>Age
+        <select name="age" required>
+          <option value="">Select</option>
+          <option>21-24</option>
+          <option>25-34</option>
+          <option>35+</option>
+        </select>
+      </label>
+      <label>Driver license state <input name="dl_state" placeholder="CA preferred" required></label>
+      <label>Driver license number (optional) <input name="dl_number" placeholder="Optional"></label>
+      <label>Preferred start date <input type="date" name="start_date" required></label>
+      <label>How many weeks? <input type="number" name="weeks" min="1" max="12" value="1" required></label>
+      <label>Which car do you want?
+        <select name="model_choice" required>
+          <option value="">Select</option>
+          <option>2nd Gen Prius</option>
+          <option>3rd Gen Prius</option>
+          <option>Either / first available</option>
+        </select>
+      </label>
+      <label>Pickup or delivery?
+        <select name="handoff" required>
+          <option>Pickup in Culver City</option>
+          <option>Request delivery (fee may apply)</option>
+        </select>
+      </label>
+      <label>Payment method
+        <select name="payment" required>
+          <option>Cash</option>
+          <option>Zelle</option>
+          <option>Venmo</option>
+        </select>
+      </label>
+      <h3>Confirm & Agree</h3>
+      <label class="check"><input type="checkbox" name="deposit" required> One-week refundable deposit.</label>
+      <label class="check"><input type="checkbox" name="weekly_pay" required> Pay on the first day of each rental week.</label>
+      <label class="check"><input type="checkbox" name="miles" required> Unlimited miles within California only.</label>
+      <label class="check"><input type="checkbox" name="care" required> Return the vehicle in the same condition; maintenance included.</label>
+      <label>Anything else? <textarea name="notes" rows="4" placeholder="Delivery address, special requests, etc."></textarea></label>
+      <input type="hidden" name="_subject" value="New Rental Booking - Infinity Auto Group">
+      <button class="btn" type="submit">Submit Booking</button>
+      <p class="muted">We’ll text you within business hours to finish verification (ID check & deposit) and confirm availability.</p>
+    </form>
+  </div>
+  <aside>
+    <h3>What You Get</h3>
+    <ul class="bullets">
+      <li>Unlimited miles in California</li>
+      <li>Apple CarPlay (varies by vehicle)</li>
+      <li>Super economical fuel usage</li>
+      <li>Maintenance included</li>
+    </ul>
+    <h3>Fastest Way</h3>
+    <p>Message us on WhatsApp and mention “BOOKING” for the next available car.</p>
+    <a class="btn btn-whatsapp" href="https://wa.me/13109089566" target="_blank" rel="noopener">WhatsApp “BOOKING”</a>
+  </aside>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>Infinity Auto Group</h4>
+      <p>Culver City, CA</p>
+      <p><a href="tel:+13109089566">(310) 908-9566</a><br><a href="mailto:infinityautogroup2@gmail.com">infinityautogroup2@gmail.com</a></p>
+      <div class="cta-row">
+        <a class="btn btn-whatsapp" href="https://wa.me/13109089566" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+    <div>
+      <h4>Hours</h4>
+      <p>Mon–Sun: 7:00 AM – 11:00 PM</p>
+    </div>
+  </div>
+  <div class="container footer-bottom"><small>© 2025 Infinity Auto Group</small></div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
